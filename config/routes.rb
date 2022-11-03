@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  # "testing routes from grace!"
+  # education routes
+  resources :educations
 
   get "/skills" => "skills#index"
   get "/skills/:id" => "skills#show"
