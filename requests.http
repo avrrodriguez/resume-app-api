@@ -1,0 +1,29 @@
+### education index action
+GET http://localhost:3000/educations.json
+
+### education show action
+GET http://localhost:3000/educations/1.json
+
+### education create action
+POST http://localhost:3000/educations.json
+Content-Type: application/json
+
+{
+  "degree": "test degree",
+  "university_name": "test university name!",
+  "details": "certificate in testing universities!"
+}
+# YYYY-MM-DD HH:MM:SS
+
+### education update action
+PATCH http://localhost:3000/educations/4.json
+Content-Type: application/json
+
+{
+  "degree": "updated degree",
+  "university_name": "updated university name!",
+  "details": "certificate in updating universities!"
+}
+
+### education destroy action
+DELETE http://localhost:3000/educations/3.json

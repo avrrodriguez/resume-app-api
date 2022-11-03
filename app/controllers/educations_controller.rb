@@ -1,6 +1,6 @@
 class EducationsController < ApplicationController
   def index
-    educations = education.all
+    educations = Education.all
     render json: educations.as_json
   end
 
@@ -11,13 +11,40 @@ class EducationsController < ApplicationController
 
   def create
     education = Education.new(
+      # student_id needs to be dynamic
+      student_id: 1,
       start_date: params[:start_date],
       end_date: params[:end_date],
       degree: params[:degree],
       university_name: params[:university_name],
       details: params[:details]
     )
-    education.save
-    render json: education.as_json
+
+    if education.save
+      render json: education.as_json
+    else
+      render json: {errors: education.errors.full_messages}, status: :unprocessable_entity
+    end
+  end
+
+  def update
+    education = Education.find_by(id: params[:id])
+    education.start_date = params[:start_date] || education.start_date
+    education.end_date = params[:end_date] || education.end_date
+    education.degree = params[:degree] || education.degree
+    education.university_name = params[:university_name] || education.university_name
+    education.details = params[:details] || education.details
+
+    if education.save
+      render json: education.as_json
+    else
+      render json: {"errors": education.errors.full_messages}, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    education = Education.find_by(id: params[:id])
+    education.destroy
+    render json: {message: "education has been deleted"}
   end
 end
