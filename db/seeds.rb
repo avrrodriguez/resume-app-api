@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+
 student = Student.new(
   first_name: "Bob",
   last_name: "Burgers",
@@ -35,3 +36,12 @@ student = Student.new(
   photo: "lucy.jpeg",
 )
 student.save
+
+Skill.create(
+  skill_name: "Ruby", 
+  student_id: 1
+)
+Skill.create(
+  skill_name: "Rails",
+  student_id: 1
+)
