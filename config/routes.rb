@@ -9,5 +9,12 @@ Rails.application.routes.draw do
   post "/educations" => "educations#create"
   get "/educations/:id" => "educations#show"
   patch "/educations/:id" => "educations#update"
-  delete "/educations/:id" => "photos#destroy"
+  delete "/educations/:id" => "capstones#destroy"
+
+  # capstone
+  get "/capstones" => "capstones#index"
+  post "/capstones" => "capstones#create"
+  get "/capstones/:id" => "capstones#show"
+  patch "/capstones/:id" => "capstones#update"
+  delete "/capstones/:id" => "capstones#destroy"
 end
