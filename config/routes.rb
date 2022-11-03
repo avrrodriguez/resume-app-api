@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   # "testing routes from grace!"
+
+  get "/skills" => "skills#index"
 end
