@@ -16,6 +16,7 @@ POST http://localhost:3000/educations.json
 Content-Type: application/json
 
 {
+  "student_id": 1,
   "degree": "test degree",
   "university_name": "test university name!",
   "details": "certificate in testing universities!"
