@@ -12,7 +12,7 @@ class EducationsController < ApplicationController
   def create
     education = Education.new(
       # student_id needs to be dynamic
-      student_id: 1,
+      student_id: params[:student_id],
       start_date: params[:start_date],
       end_date: params[:end_date],
       degree: params[:degree],
