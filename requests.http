@@ -45,3 +45,26 @@ GET http://localhost:3000/capstones.json
 
 ### capstone show action
 GET http://localhost:3000/capstones/1.json
+
+### capstone create action
+POST http://localhost:3000/capstones.json
+Content-Type: application/json
+
+{
+  "student_id": 1,
+  "name": "new capstone test",
+  "description": "new capstone description test",
+  "url": "link to new capstone",
+  "screenshot": "img of new capstone!"
+}
+
+### capstone update action
+PATCH http://localhost:3000/capstones/2.json
+Content-Type: application/json
+
+{
+  "name": "updated capstone test",
+  "description": "updated capstone description test",
+  "url": "link to updated capstone",
+  "screenshot": "img of updated capstone!"
+}
