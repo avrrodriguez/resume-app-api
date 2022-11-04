@@ -1,4 +1,20 @@
-POST  http://localhost:3000/skills.json
+GET http://localhost:3000/students/experiences
+
+###
+
+POST http://localhost:3000/students/2/experiences.json
+Content-Type: application/json
+
+{
+  "student_id": 2,
+  "start_date": "0001-01-05",
+  "end_date": "0003-07-20",
+  "job_title": "Wheelmaker",
+  "company_name": "weel maker",
+  "details": "i make wheel"
+}
+###
+POST  http://localhost:3000/students/skills.json
 Content-Type: application/json
 
 {
