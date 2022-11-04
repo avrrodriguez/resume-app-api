@@ -28,7 +28,7 @@ class SkillsController < ApplicationController
     skill.student_id = params["stusent_id"] || skill.student_id
 
     if skill.save
-      render json: {messages: "Updated Successfully!"}
+      render json: {message: "Updated Successfully!"}
     else
       render json: {errors: skill.errors.full_messages}, status: :unprocessable_entity
     end
