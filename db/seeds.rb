@@ -46,3 +46,21 @@ Skill.create(
   skill_name: "Rails",
   student_id: 1,
 )
+
+Experience.create(
+  start_date: "2001-05-10",
+  end_date: "2010-05-10",
+  job_title: "Lead Custodian",
+  company_name: "Google",
+  details: "I was the best custodian there",
+  student_id: 1
+)
+
+Experience.create(
+  start_date: "2015-10-22",
+  end_date: "2019-09-20",
+  job_title: "CEO",
+  company_name: "Amazon",
+  details: "Fun job",
+  student_id: 1
+)
