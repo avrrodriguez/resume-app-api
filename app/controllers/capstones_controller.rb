@@ -1,4 +1,6 @@
 class CapstonesController < ApplicationController
+  before_action :authenticate_student, except: [:index, :show]
+
   def index
     capstones = Capstone.all
     render json: capstones.as_json
