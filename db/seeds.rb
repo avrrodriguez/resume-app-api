@@ -18,7 +18,7 @@ student = Student.new(
   resume_url: "bobresume.test",
   github_url: "bobgithub.test",
   photo: "bob.jpeg",
-  password_digest: "password",
+  password: "password",
 )
 student.save
 
@@ -34,7 +34,7 @@ student = Student.new(
   resume_url: "lucyresume.test",
   github_url: "lucygithub.test",
   photo: "lucy.jpeg",
-  password_digest: "password",
+  password: "password",
 )
 student.save
 

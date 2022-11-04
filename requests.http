@@ -91,3 +91,13 @@ Content-Type: application/json
 
 ### capstone destroy action
 DELETE http://localhost:3000/students/capstones/2.json
+
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "bob@test.com",
+  "password": "password"
+}
