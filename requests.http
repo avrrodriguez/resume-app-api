@@ -68,3 +68,6 @@ Content-Type: application/json
   "url": "link to updated capstone",
   "screenshot": "img of updated capstone!"
 }
+
+### capstone destroy action
+DELETE http://localhost:3000/capstones/2.json

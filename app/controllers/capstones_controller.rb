@@ -38,4 +38,10 @@ class CapstonesController < ApplicationController
       render json: {"errors": capstone.errors.full_messages}, status: :unprocessable_entity
     end
   end
+
+  def destroy
+    capstone = Capstone.find_by(id: params[:id])
+    capstone.destroy
+    render json: {message: "capstone has been deleted"}
+  end
 end
