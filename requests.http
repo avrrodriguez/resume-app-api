@@ -1,4 +1,8 @@
-POST http://localhost:3000/experiences.json
+GET http://localhost:3000/students/experiences
+
+###
+
+POST http://localhost:3000/students/2/experiences.json
 Content-Type: application/json
 
 {
@@ -10,7 +14,7 @@ Content-Type: application/json
   "details": "i make wheel"
 }
 ###
-POST  http://localhost:3000/skills.json
+POST  http://localhost:3000/students/skills.json
 Content-Type: application/json
 
 {
