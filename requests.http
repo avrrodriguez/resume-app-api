@@ -13,8 +13,9 @@ Content-Type: application/json
   "company_name": "weel maker",
   "details": "i make wheel"
 }
+
 ###
-POST  http://localhost:3000/students/skills.json
+POST http://localhost:3000/students/2/skills.json
 Content-Type: application/json
 
 {
