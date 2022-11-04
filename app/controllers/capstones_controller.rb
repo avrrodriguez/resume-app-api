@@ -13,7 +13,7 @@ class CapstonesController < ApplicationController
 
   def create
     capstone = Capstone.new(
-      student_id: params[:student_id],
+      student_id: current_student.id,
       name: params[:name],
       description: params[:description],
       url: params[:url],
