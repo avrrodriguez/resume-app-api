@@ -1,4 +1,5 @@
 class SkillsController < ApplicationController
+  before_action :authenticate_student, except: [:index, :show]
 
   def index
     skills = Skill.all
