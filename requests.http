@@ -5,6 +5,9 @@ Content-Type: application/json
   "skill_name": "JavaScript"
 }
 
+
+
+### EDUCATION REQUESTS ----------------------------------------------
 ### education index action
 GET http://localhost:3000/educations.json
 
@@ -35,3 +38,10 @@ Content-Type: application/json
 
 ### education destroy action
 DELETE http://localhost:3000/educations/3.json
+
+### CAPSTONE REQUESTS ----------------------------------------------
+### capstone index action
+GET http://localhost:3000/capstones.json
+
+### capstone show action
+GET http://localhost:3000/capstones/1.json

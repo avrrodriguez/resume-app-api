@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   # education routes
   resources :educations
 
+  # capstones routes
+  resources :capstones
+
   get "/skills" => "skills#index"
   get "/skills/:id" => "skills#show"
   post "/skills" => "skills#create"
