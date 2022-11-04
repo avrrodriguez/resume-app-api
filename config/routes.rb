@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   # education routes
-  resources :educations
+  # resources :educations
 
   # capstones routes
-  resources :capstones
+  # resources :capstones
 
   get "/skills" => "skills#index"
   get "/skills/:id" => "skills#show"
@@ -21,7 +21,9 @@ Rails.application.routes.draw do
   patch "/experiences/:id" => "experiences#update"
   delete "/experiences/:id" => "experiences#destroy"
 
-  # resources :students do 
-  #   resources :skills
-  # end
+  resources :students do
+    # resources :skills
+    resources :educations
+    resources :capstones
+  end
 end
