@@ -14,7 +14,7 @@ class SkillsController < ApplicationController
   def create
     skill = Skill.new(
       skill_name: params["skill_name"],
-      student_id: params["student_id"]
+      student_id: current_student.id
     )
     if skill.save
       render json: {message: "Created Successfully!"}
