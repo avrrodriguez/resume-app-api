@@ -38,8 +38,7 @@ class SkillsController < ApplicationController
   def destroy
     skill = Skill.find_by(id: params["id"])
     skill.destroy
-
-    render {message: "Destroyed Successfully!"}
+    render json: {message: "Destroyed Successfully!"}
   end
 
 end

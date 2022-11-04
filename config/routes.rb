@@ -8,9 +8,8 @@ Rails.application.routes.draw do
     resources :capstones
     resources :skills
     resources :experiences
-
   end
-
+  
   post "/sessions" => "sessions#create"
 
 end

@@ -13,8 +13,9 @@ Content-Type: application/json
   "company_name": "weel maker",
   "details": "i make wheel"
 }
+
 ###
-POST  http://localhost:3000/students/skills.json
+POST http://localhost:3000/students/2/skills.json
 Content-Type: application/json
 
 {
@@ -28,10 +29,10 @@ Content-Type: application/json
 GET http://localhost:3000/students/educations.json
 
 ### education show action
-GET http://localhost:3000/students/educations/1.json
+GET http://localhost:3000/students/1/educations/1.json
 
 ### education create action
-POST http://localhost:3000/students/educations.json
+POST http://localhost:3000/students/1/educations.json
 Content-Type: application/json
 
 {
@@ -45,7 +46,7 @@ Content-Type: application/json
 # YYYY-MM-DD HH:MM:SS
 
 ### education update action
-PATCH http://localhost:3000/students/educations/8.json
+PATCH http://localhost:3000/students/1/educations/8.json
 Content-Type: application/json
 
 {
@@ -57,17 +58,17 @@ Content-Type: application/json
 }
 
 ### education destroy action
-DELETE http://localhost:3000/students/educations/3.json
+DELETE http://localhost:3000/students/1/educations/3.json
 
 ### CAPSTONE REQUESTS ----------------------------------------------
 ### capstone index action
-GET http://localhost:3000/students/capstones.json
+GET http://localhost:3000/students/1/capstones.json
 
 ### capstone show action
-GET http://localhost:3000/students/capstones/1.json
+GET http://localhost:3000/students/1/capstones/1.json
 
 ### capstone create action
-POST http://localhost:3000/students/capstones.json
+POST http://localhost:3000/students/1/capstones.json
 Content-Type: application/json
 
 {
@@ -79,7 +80,7 @@ Content-Type: application/json
 }
 
 ### capstone update action
-PATCH http://localhost:3000/students/capstones/2.json
+PATCH http://localhost:3000/students/1/capstones/2.json
 Content-Type: application/json
 
 {
@@ -90,7 +91,7 @@ Content-Type: application/json
 }
 
 ### capstone destroy action
-DELETE http://localhost:3000/students/capstones/2.json
+DELETE http://localhost:3000/students/1/capstones/2.json
 
 
 ### Sessions create (login)
